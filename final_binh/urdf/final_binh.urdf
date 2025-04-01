@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="final_binh">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.000324261867156922 -3.40855606997814E-06 0.0369312814898062"
+        rpy="0 0 0" />
+      <mass
+        value="3.16662912884944" />
+      <inertia
+        ixx="0.00780234973984748"
+        ixy="-5.50095275441881E-06"
+        ixz="6.73807861280501E-05"
+        iyy="0.0175948239359823"
+        iyz="-2.32087295904176E-06"
+        izz="0.0221904574034655" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="right1_link">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-17 -2.77555756156289E-17 -0.0125"
+        rpy="0 0 0" />
+      <mass
+        value="0.0993309239411309" />
+      <inertia
+        ixx="4.38084559903455E-05"
+        ixy="-6.54299864529446E-21"
+        ixz="-1.15500031277765E-21"
+        iyy="4.38084559903456E-05"
+        iyz="9.14085068132833E-23"
+        izz="7.54123490516298E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/right1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/right1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right1_joint"
+    type="continuous">
+    <origin
+      xyz="0.0985883276343825 -0.105 0.0217221101444408"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right1_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right2_link">
+    <inertial>
+      <origin
+        xyz="-6.93889390390723E-18 0 -0.0125"
+        rpy="0 0 0" />
+      <mass
+        value="0.241887879475099" />
+      <inertia
+        ixx="0.000222254359466381"
+        ixy="1.21336318832069E-36"
+        ixz="-1.02587836350968E-20"
+        iyy="0.000222254359466381"
+        iyz="-2.55869624098477E-37"
+        izz="0.000416478586236903" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/right2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/right2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right2_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0834979475756175 -0.105 0.0276567895644408"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right2_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left1_link">
+    <inertial>
+      <origin
+        xyz="-8.32667268468867E-17 -4.16333634234434E-17 0.0125"
+        rpy="0 0 0" />
+      <mass
+        value="0.0993309239411309" />
+      <inertia
+        ixx="4.38084559903455E-05"
+        ixy="8.40829092660152E-21"
+        ixz="1.50798611293508E-22"
+        iyy="4.38084559903455E-05"
+        iyz="6.14223493416354E-22"
+        izz="7.54123490516298E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/left1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/left1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left1_joint"
+    type="continuous">
+    <origin
+      xyz="0.0985883276343825 0.105 0.0217221101444408"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left1_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left2_link">
+    <inertial>
+      <origin
+        xyz="0 0 0.0125"
+        rpy="0 0 0" />
+      <mass
+        value="0.241887879475098" />
+      <inertia
+        ixx="0.000222254359466381"
+        ixy="1.21336318832068E-36"
+        ixz="-1.02587836350968E-20"
+        iyy="0.000222254359466381"
+        iyz="-2.55869624098477E-37"
+        izz="0.000416478586236903" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/left2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/left2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left2_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0834979475756175 0.105 0.0276567895644408"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left2_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="link1_link">
+    <inertial>
+      <origin
+        xyz="0.00631668333694865 0.0115892577589509 0.00562583371911912"
+        rpy="0 0 0" />
+      <mass
+        value="0.00713198703426089" />
+      <inertia
+        ixx="9.76709820830638E-07"
+        ixy="-3.92119572192848E-07"
+        ixz="1.34384237922081E-08"
+        iyy="4.16111676948775E-07"
+        iyz="2.32595917593344E-08"
+        izz="1.20246364632738E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/link1_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/link1_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="link1_joint"
+    type="continuous">
+    <origin
+      xyz="0.0763599612396356 0.00332522402290375 0.095"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1_link" />
+    <axis
+      xyz="0.0592148162091871 0 0.998245263220073" />
+  </joint>
+  <link
+    name="link2_link">
+    <inertial>
+      <origin
+        xyz="0.0182120371413058 0.00106462734475279 0.003928472720377"
+        rpy="0 0 0" />
+      <mass
+        value="0.00724275728808697" />
+      <inertia
+        ixx="1.92594878872013E-07"
+        ixy="-8.77957960512386E-08"
+        ixz="9.08701715583708E-08"
+        iyy="1.66464164547708E-06"
+        iyz="5.2079247060559E-09"
+        izz="1.71910138740231E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/link2_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://final_binh/meshes/link2_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="link2_joint"
+    type="continuous">
+    <origin
+      xyz="0.0188069653584598 0.036445034347123 -0.000133885931722505"
+      rpy="0 0 0" />
+    <parent
+      link="link1_link" />
+    <child
+      link="link2_link" />
+    <axis
+      xyz="0.0592148162091871 0 0.998245263220073" />
+  </joint>
+ <link name="camera_link">
+    <inertial>
+      <origin xyz="-0.000532244761685979 -0.00500000000000003 0" rpy="0 0 0" />
+      <mass value="0.000861769923242052" />
+      <inertia
+        ixx="1.57870207236616E-08"
+        ixy="-1.1119119370247E-25"
+        ixz="9.49704937467344E-25"
+        iyy="1.42276145493079E-08"
+        iyz="-1.05636279367223E-24"
+        izz="1.42276145493079E-08" />
+    </inertial>
+    
+    <visual>
+      <origin xyz="0 0 0" rpy="0 1.5708 0" />
+      <geometry>
+        <mesh filename="package://final_binh/meshes/camera_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5708 0" />
+      <geometry>
+        <mesh filename="package://final_binh/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+</link>
+
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0.12 -0.00358837436572068 0.085"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+
+
+<gazebo>
+  <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
+	<ros>
+  	<namespace>/</namespace>
+
+  	<remap>
+    	<from>cmd_vel</from>
+    	<to>/cmd_vel</to>
+  	</remap>
+
+  	<rosDebugLevel>INFO</rosDebugLevel>
+	</ros>
+
+	<leftJoint>left1_joint</leftJoint> 
+	<leftJoint>left2_joint</leftJoint> 
+	<rightJoint>right1_joint</rightJoint> 
+	<rightJoint>right2_joint</rightJoint> 
+
+	<wheelSeparation>0.1566</wheelSeparation> 
+	<wheelDiameter>0.07</wheelDiameter>     	 
+	<wheelAcceleration>1.0</wheelAcceleration>  
+	<wheelTorque>10</wheelTorque>           	  
+
+	<commandTopic>cmd_vel</commandTopic>     
+	<odometryTopic>odom</odometryTopic>  
+	<odometryFrame>odom</odometryFrame>      
+	<robotBaseFrame>base_footprint</robotBaseFrame> 
+
+	<publishWheelTF>true</publishWheelTF>      
+	<publishOdomTF>true</publishOdomTF>          
+	<publishWheelJointState>true</publishWheelJointState> 
+	<publishTf>1</publishTf>                    
+
+	<updateRate>100</updateRate> 
+
+	<odometrySource>1</odometrySource> 
+
+	<rosDebugLevel>info</rosDebugLevel>
+
+  </plugin>
+</gazebo>
+
+
+
+<!-- Plugin Camera -->
+<gazebo reference="camera_link"> 
+  <sensor type="camera" name="camera_sensor"> 
+    
+    <update_rate>30</update_rate> 
+    
+    <camera> 
+      
+      <horizontal_fov>1.3962634</horizontal_fov>
+      
+      <image> 
+        <width>640</width> 
+        <height>480</height> 
+        <format>R8G8B8</format> 
+      </image>
+      
+    </camera> 
+    
+    <plugin name="camera_controller" filename="libgazebo_ros_camera.so"> 
+      
+      <alwaysOn>true</alwaysOn> 
+      
+      <updateRate>30.0</updateRate> 
+      
+      <cameraName>my_camera</cameraName> 
+      
+      <frameName>camera_link</frameName> 
+      
+      <imageTopicName>/camera/image_raw</imageTopicName> 
+      
+      <cameraInfoTopicName>/camera/camera_info</cameraInfoTopicName> 
+      
+    </plugin> 
+    
+    <pose>0 0 0 0 0 0</pose> 
+                                
+  </sensor> 
+</gazebo> 
+
+<transmission name="link1_joint_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+
+    <joint name="link1_joint">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+
+    <actuator name="link1_servo">
+        <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+</transmission>
+
+<transmission name="link2_joint_transmission">
+    <type>transmission_interface/SimpleTransmission</type>
+
+    <joint name="link2_joint">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+
+    <actuator name="link2_servo">
+        <mechanicalReduction>1.0</mechanicalReduction>
+    </actuator>
+</transmission>
+
+<gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+        <robotNamespace>/</robotNamespace>
+    </plugin>
+</gazebo>
+
+<!-- IMU plugin -->
+<gazebo reference="base_link">
+  <gravity>true</gravity>
+  <sensor name="imu_sensor" type="imu">
+    <always_on>true</always_on>
+    <update_rate>10</update_rate>
+    <visualize>true</visualize>
+    <topic>__default_topic__</topic>
+    <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+      <topicName>imu</topicName>
+      <bodyName>base_link</bodyName>
+      <updateRateHZ>10.0</updateRateHZ>
+      <frameName>base_link</frameName>
+      <initialOrientationAsReference>false</initialOrientationAsReference>
+    </plugin>
+    <pose>0 0 0 0 0 0</pose>
+  </sensor>
+</gazebo>
+
+</robot>
